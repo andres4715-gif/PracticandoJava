@@ -1,0 +1,1 @@
+Para validar el total de ejercicios se puede validar esta [pagina](http://puntocomnoesunlenguaje.blogspot.com/p/ejercicios.html)
