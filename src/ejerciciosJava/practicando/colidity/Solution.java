@@ -2,13 +2,11 @@ package ejerciciosJava.practicando.colidity;
 
 import java.util.HashSet;
 
-public class Solucion {
-
-    public static int[] A = {1, 3, 6, 4, 1, 2};
+public class Solution {
 
     public static void main(String[] args) {
-        Solucion mi = new Solucion();
-        System.out.println(mi.solution(A));
+        Solution mi = new Solution();
+        System.out.println(mi.solution(new int [] {1, 3, 6, 4, 1, 2}));
     }
 
     public int solution(int[] A) {
