@@ -2,10 +2,20 @@ package ejerciciosJava.practicando.colidity;
 
 import java.util.HashSet;
 
-public class Solution {
+public class Solution1 {
+
+    /*
+            Dato que el array A tiene N cantidad de enteros, retornar el numero entero positivo que no esta en el array,
+
+            Ejemplos:
+
+            Dado A = [1,3,6,4,1,2] la funcion debe retormar 5
+            Dado A = [1,2,3] la funcion debe retornar 4
+            Dado A = [-1, -3] la funcion debe retornar 1
+     */
 
     public static void main(String[] args) {
-        Solution mi = new Solution();
+        Solution1 mi = new Solution1();
         System.out.println(mi.solution(new int [] {1, 3, 6, 4, 1, 2}));
     }
 
