@@ -2,7 +2,7 @@ package ejerciciosJava.practicando.arrays;
 
 public class Data {
 
-    public void sumaAndmedia(int[] A) {
+    public static void sumaAndmedia(int[] A) {
         double sumaPos = 0;
         double sumaNeg = 0;
         int pos = 0;

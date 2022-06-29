@@ -1,6 +1,6 @@
 package ejerciciosJava.practicando.arrays;
 
-public class Ejercicio1 {
+public class Ejercicio1 extends Data{
 
     /*
      * Programa que lea por teclado 10 números enteros y los guarde en un array.
@@ -8,9 +8,7 @@ public class Ejercicio1 {
      */
 
     public static void main(String[] args) {
-
-        Data hs = new Data();
-        hs.sumaAndmedia(new int[]{1, 2, 3, 4, 5, -1, -2, -3, -4, -5});
+        sumaAndmedia(new int[]{1, 2, 3, 4, 5, -1, -2, -3, -4, -5});
     }
 }
 
