@@ -7,32 +7,32 @@ public class Ejercicio1 {
      * A continuación calcula y muestra la media de los valores positivos y la  de los valores negativos.
      */
 
-
     public static void main(String[] args) {
+        Ejercicio1.sumaAndmedia(new int [] {1, 2, 3, 4, 5, -1, -2, -3, -4, -5});
+    }
+
+    public static void sumaAndmedia(int[] A) {
         double sumaPos = 0;
         double sumaNeg = 0;
         int pos = 0;
         int neg = 0;
 
-        int[] nums = {1, 2, 3, 4, 5, -1, -2, -3, -4, -5};
-
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] >= 0) {
-                sumaPos += nums[i];
+        for (int i = 0; i < A.length; i++) {
+            if (A[i] >= 0) {
+                sumaPos += A[i];
                 pos++;
             } else {
-                sumaNeg += nums[i];
+                sumaNeg += A[i];
                 neg++;
             }
         }
 
-        System.out.println("La suma de los positivos son: " + sumaPos);
-        System.out.println("La suma de los negativos son: " + sumaNeg);
-        System.out.println("Los numeros positivos son: " + pos);
-        System.out.println("Los numeros negativos son: " + neg);
+        System.out.println("Positivos son: " + sumaPos);
+        System.out.println("Negativos son: " + sumaNeg);
+        System.out.println("Cantidad positivos son: " + pos);
+        System.out.println("Cantidad negativos son: " + neg);
 
-
-        System.out.println("la media de los positivos es: " + (sumaPos / pos));
-        System.out.println("la media de los negativos es: " + (sumaNeg / neg));
+        System.out.println("Media positivos es: " + (sumaPos / pos));
+        System.out.println("media negativos es: " + (sumaNeg / neg));
     }
 }
