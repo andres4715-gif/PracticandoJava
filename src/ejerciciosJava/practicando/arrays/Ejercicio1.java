@@ -1,6 +1,6 @@
 package ejerciciosJava.practicando.arrays;
 
-public class Ejercicio1 extends Data{
+public class Ejercicio1 extends Data {
 
     /*
      * Programa que lea por teclado 10 números enteros y los guarde en un array.
