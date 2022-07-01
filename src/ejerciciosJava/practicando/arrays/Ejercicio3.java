@@ -11,7 +11,40 @@ public class Ejercicio3 {
 
     // link: http://puntocomnoesunlenguaje.blogspot.com/2012/08/arrays-en-java-ejercicios-basicos-2.html
 
-    public static void main(String[] args) {
 
+    static double[] notas = {8.5, 5.6, 10, 9.8, 5.9, 8.5, 5.6, 10, 9.8, 5.9};
+    static double mediaDeLasNotasDelosAlumnos;
+    static int cantidadDeAlumnosConNotasMayoresAlPromedio = 0;
+
+    public static void main(String[] args) {
+        mediaDeLasNotasDelosAlumnos = notasAlumnos(notas);
+        cantidadDeAlumnosConNotasMayoresAlPromedio = catidadAlumnosConNotasMayoresAlPromedio(notas);
+
+        System.out.println("La media de todas las notas de los alunos es: " + mediaDeLasNotasDelosAlumnos);
+        System.out.println("La cantidad de alumnos con nota mayor a la media es: " + cantidadDeAlumnosConNotasMayoresAlPromedio);
+    }
+
+    private static double notasAlumnos(double[] notasAlumnos) {
+        double sumaDeNotasAlumnos = 0;
+        int cantidadAlumnos = 0;
+
+        double mediaDeLasNotasDeLosAlumnos;
+        for (double nota : notasAlumnos) {
+            sumaDeNotasAlumnos += nota;
+            cantidadAlumnos++;
+        }
+        mediaDeLasNotasDeLosAlumnos = (sumaDeNotasAlumnos / cantidadAlumnos);
+        return mediaDeLasNotasDeLosAlumnos;
+    }
+
+    private static int catidadAlumnosConNotasMayoresAlPromedio(double[] notas) {
+        int contadorAlumnosConNotasMayores = 0;
+
+        for (double goodNotas : notas) {
+            if (goodNotas >= mediaDeLasNotasDelosAlumnos) {
+                contadorAlumnosConNotasMayores++;
+            }
+        }
+        return contadorAlumnosConNotasMayores;
     }
 }
