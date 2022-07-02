@@ -17,7 +17,6 @@ public class AgregarUnNuevoRegistro {
         for (String print : calzado.keySet()) {
             System.out.println(print);
         }
-
     }
 
     public static void addAllHashMap(HashMap<String, Integer> mio, String key, Integer value) {
