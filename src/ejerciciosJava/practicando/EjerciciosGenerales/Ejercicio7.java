@@ -7,6 +7,14 @@ public class Ejercicio7 {
     */
 
     public static void main(String[] args) {
+        int multiplicador = 1;
 
+        do {
+            for (int i = 1; i <= 10; i++) {
+                System.out.println(i + " X " + multiplicador + " = " + (i * multiplicador));
+            }
+            System.out.println("\n");
+            multiplicador++;
+        } while (multiplicador <= 10);
     }
 }
