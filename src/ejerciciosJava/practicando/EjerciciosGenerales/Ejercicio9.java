@@ -1,7 +1,5 @@
 package ejerciciosJava.practicando.EjerciciosGenerales;
 
-import java.util.ArrayList;
-
 public class Ejercicio9 {
 
     /*
@@ -14,6 +12,18 @@ public class Ejercicio9 {
     */
 
     public static void main(String[] args) {
+        double valorProducto = 501;
 
+        if (valorProducto <= 500) {
+            System.out.println(valorProducto);
+        } else if (valorProducto > 500 && valorProducto <= 1000) {
+            System.out.println((valorProducto - (valorProducto * 5 / 100)));
+        } else if (valorProducto > 1000 && valorProducto <= 7000) {
+            System.out.println((valorProducto - (valorProducto * 11 / 100)));
+        } else if (valorProducto > 7000 && valorProducto <= 15000) {
+            System.out.println((valorProducto - (valorProducto * 18 / 100)));
+        } else if (valorProducto > 15000) {
+            System.out.println((valorProducto - (valorProducto * 25 / 100)));
+        }
     }
 }
