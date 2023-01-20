@@ -1,4 +1,4 @@
-package MyPractice.entrevistas.ejerciciosDePractica;
+package ejerciciosJava.MyPractice.entrevistas.ejerciciosDePractica;
 
 
 import java.util.Arrays;

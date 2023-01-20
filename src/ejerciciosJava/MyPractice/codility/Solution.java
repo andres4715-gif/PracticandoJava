@@ -1,4 +1,4 @@
-package MyPractice.codility;
+package ejerciciosJava.MyPractice.codility;
 
 import java.util.HashSet;
 

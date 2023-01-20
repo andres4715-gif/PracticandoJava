@@ -1,6 +1,6 @@
-package MyPractice.codility;
+package ejerciciosJava.MyPractice.codility;
 
-import static MyPractice.codility.Solution.solution;
+import static ejerciciosJava.MyPractice.codility.Solution.solution;
 
 public class Doing {
 

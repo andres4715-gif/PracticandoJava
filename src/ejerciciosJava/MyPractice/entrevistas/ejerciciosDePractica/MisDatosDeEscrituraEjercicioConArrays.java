@@ -1,4 +1,4 @@
-package MyPractice.entrevistas.ejerciciosDePractica;
+package ejerciciosJava.MyPractice.entrevistas.ejerciciosDePractica;
 
 public class MisDatosDeEscrituraEjercicioConArrays {
 
