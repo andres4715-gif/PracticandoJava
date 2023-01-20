@@ -1,6 +1,6 @@
 package ejerciciosJava.MyPractice.oneYearPracticing;
 
-public class NewValues {
+public class Dia_1_NewValues {
 
     public static void main(String[] args) {
         int numero1 = 35;
