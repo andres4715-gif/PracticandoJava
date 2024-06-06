@@ -4,15 +4,21 @@ import java.util.HashSet;
 
 public class Hashset {
 
-    public static void main(String[] args) {
-        int[] A = {1, 2, 3, 4, 5, 6, 6, 6, 2};
+    // Lo primero que hay que saber es que hashset no es un array es una lista
+    // new practice.
 
-        HashSet<Integer> hashSet = new HashSet<>();
-        for(int data : A) {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 6, 6, 2};
+
+        HashSet<Integer> hashSetValues = new HashSet<>();
+        HashSet<Integer> newHashSetData = new HashSet<Integer>();
+        System.out.println(newHashSetData);
+
+        for(int data : numbers) {
             if(data > 5) {
-                hashSet.add(data);
+                hashSetValues.add(data);
             }
         }
-        System.out.println(hashSet);
+        System.out.println(hashSetValues);
     }
 }
