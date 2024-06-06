@@ -5,15 +5,14 @@ public class Alumno {
     private String nombre;
     private String apellido;
     private int edad;
+    private final int id;
 
     public Alumno(int id, String nombre, String apellido, int edad) {
-        this.edad = edad;
         this.id = id;
+        this.edad = edad;
         this.nombre = nombre;
         this.apellido = apellido;
     }
-
-    private int id;
 
     public int getId() {
         return id;
@@ -31,13 +30,25 @@ public class Alumno {
         return edad;
     }
 
-    public boolean mayorDeEdad() {
+    public boolean mayorDeEdad(int edadPermitida) {
         boolean ingreso;
-        if(this.edad > 18) {
+        if(this.edad > edadPermitida) {
             ingreso = true;
         }else {
             ingreso = false;
         }
         return ingreso;
+    }
+
+    public void gettingFakeData (int dato1, int dato2) {
+        int respuesta = dato1 + dato2;
+        System.out.println("--- La data que se quiere obtner es: " + respuesta);
+    }
+
+    public boolean mayoriaEdad(int limite) {
+        boolean data;
+        data = this.edad >= limite;
+        return data;
+
     }
 }
