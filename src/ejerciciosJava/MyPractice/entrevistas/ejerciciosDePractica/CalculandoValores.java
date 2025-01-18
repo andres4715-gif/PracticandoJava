@@ -6,19 +6,19 @@ import java.util.List;
 
 public class CalculandoValores {
     public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(1,5,3,7,9);
+        List<Integer> numbers = Arrays.asList(1, 5, 3, 7, 9);
 
-        long sumatoriaChicos =  0;
+        long sumatoriaChicos = 0;
         long sumatoriaGrandes = 0;
 
         Collections.sort(numbers);
         System.out.println("--- After sort: " + numbers);
 
-        for(int i = 0; i < numbers.size()-1 ; i++) {
+        for (int i = 0; i < numbers.size() - 1; i++) {
             sumatoriaChicos += numbers.get(i);
         }
 
-        for(int i = numbers.size() - 1; i > 0; i--) {
+        for (int i = numbers.size() - 1; i > 0; i--) {
             sumatoriaGrandes += numbers.get(i);
         }
 
