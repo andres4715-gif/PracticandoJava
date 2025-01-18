@@ -6,9 +6,8 @@ public class hola {
         int[] original = {2, 4, 6, 8, 10, 12};
         for (int n : sumasAcumuladas(original)) {
             System.out.print(n + " ");
-                    }
+        }
     }
-
 
     public static int[] sumasAcumuladas(int[] nums) {
         int[] resultado = new int[nums.length];

@@ -1,6 +1,6 @@
 package ejerciciosJava.MyPractice.entrevistas.ejerciciosDePractica.obtenerDatoArrayPrimitivo;
 
-public class getDateFromArray {
+public class GetDateFromArray {
     // Obtener n data de un array primitivo
     public static void main(String[] args) {
         Operation operation = new Operation();
