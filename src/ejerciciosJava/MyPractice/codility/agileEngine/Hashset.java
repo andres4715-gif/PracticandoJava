@@ -13,8 +13,8 @@ public class Hashset {
         HashSet<Integer> newHashSetData = new HashSet<Integer>();
         System.out.println(newHashSetData);
 
-        for(int data : numbers) {
-            if(data > 5) {
+        for (int data : numbers) {
+            if (data > 5) {
                 hashSetValues.add(data);
             }
         }
