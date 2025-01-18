@@ -22,6 +22,6 @@ public class CalculandoValores {
             sumatoriaGrandes += numbers.get(i);
         }
 
-        System.out.println(sumatoriaChicos + " " + sumatoriaGrandes);
+        System.out.println("Suma de los mas pequeños: " + sumatoriaChicos + ", " + "Suma de los mas grandes: " + sumatoriaGrandes);
     }
 }
