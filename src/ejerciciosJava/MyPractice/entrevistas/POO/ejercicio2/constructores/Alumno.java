@@ -2,10 +2,10 @@ package ejerciciosJava.MyPractice.entrevistas.POO.ejercicio2.constructores;
 
 public class Alumno {
 
+    private final int id;
     private String nombre;
     private String apellido;
     private int edad;
-    private final int id;
 
     public Alumno(int id, String nombre, String apellido, int edad) {
         this.id = id;
