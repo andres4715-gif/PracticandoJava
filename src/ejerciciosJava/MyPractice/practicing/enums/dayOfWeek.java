@@ -1,6 +1,6 @@
 package ejerciciosJava.MyPractice.practicing.enums;
 
-public enum dayOfWeek {
+enum dayOfWeek {
     MONDAY,
     TUESDAY,
     WEDNESDAY,
