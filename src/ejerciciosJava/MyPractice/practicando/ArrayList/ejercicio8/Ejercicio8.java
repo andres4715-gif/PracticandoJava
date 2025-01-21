@@ -30,14 +30,14 @@ public class Ejercicio8 {
         }
         System.out.println("Las marcas de los coches son: " + marcaDeCoches);
 
-        ArrayList<String> cochesConMenosKilometrajeDefinido = Ejercicio8.cochesConKilometrajeMenor(obj, 200000);
-        ArrayList<String> cochesConMayorKilometrajeDefinido = Ejercicio8.cochesConKilometrajeMayor(obj, 200000);
+        ArrayList<String> cochesConMenosKilometrajeDefinido = cochesConKilometrajeMenor200000(obj, 200000);
+        ArrayList<String> cochesConMayorKilometrajeDefinido = cochesConKilometrajeMayor200000(obj, 200000);
 
         System.out.println("Los coches con Menor kilimetrage definido son: " + cochesConMenosKilometrajeDefinido);
         System.out.println("Los coches con Mayor kilimetrage definido son: " + cochesConMayorKilometrajeDefinido);
     }
 
-    private static ArrayList<String> cochesConKilometrajeMenor(ArrayList<Coche> myCoche, double dataKilometraje) {
+    public static ArrayList<String> cochesConKilometrajeMenor200000(ArrayList<Coche> myCoche, double dataKilometraje) {
         ArrayList<String> determinadoKilometraje = new ArrayList<String>();
 
         for (Coche data : myCoche) {
@@ -48,7 +48,7 @@ public class Ejercicio8 {
         return determinadoKilometraje;
     }
 
-    private static ArrayList<String> cochesConKilometrajeMayor(ArrayList<Coche> myCoche, double dataKilometraje) {
+    public static ArrayList<String> cochesConKilometrajeMayor200000(ArrayList<Coche> myCoche, double dataKilometraje) {
         ArrayList<String> determinadoKilometraje = new ArrayList<String>();
 
         for (Coche data : myCoche) {
