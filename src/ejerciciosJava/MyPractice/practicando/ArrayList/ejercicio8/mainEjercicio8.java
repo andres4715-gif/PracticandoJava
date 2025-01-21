@@ -2,7 +2,7 @@ package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio8;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ejercicio8 {
+public class mainEjercicio8 {
 
     public static void main(String[] args) {
         ArrayList<Coche> obj = new ArrayList<Coche>();
