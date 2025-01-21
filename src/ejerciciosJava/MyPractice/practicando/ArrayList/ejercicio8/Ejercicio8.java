@@ -5,11 +5,11 @@ public class Ejercicio8 {
 
     public static void main(String[] args) {
         ArrayList<Coche> obj = new ArrayList<Coche>();
-        obj.add(new Coche("Chevrolet", 87888));
-        obj.add(new Coche("Mazda", 125000));
-        obj.add(new Coche("Renault", 189000));
-        obj.add(new Coche("Fiat", 345000));
-        obj.add(new Coche("Tesla", 78878));
+        obj.add(new Coche("Chevrolet", 87888, 2000));
+        obj.add(new Coche("Mazda", 125000, 2010));
+        obj.add(new Coche("Renault", 189000, 2015));
+        obj.add(new Coche("Fiat", 345000, 2017));
+        obj.add(new Coche("Tesla", 78878, 2025));
 
         ArrayList<String> marcaDeCoches = new ArrayList<String>();
         for (Coche coches : obj) {

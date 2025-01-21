@@ -3,10 +3,12 @@ package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio8;
 public class Coche {
     private String marca;
     private double kilometros;
+    private int model;
 
-    public Coche(String marca, double kilometros) {
+    public Coche(String marca, double kilometros, int model) {
         this.marca = marca;
         this.kilometros = kilometros;
+        this.model = model;
     }
 
     public String getMarca() {
@@ -23,5 +25,13 @@ public class Coche {
 
     public double setKilometros(double kilometros) {
         return kilometros;
+    }
+
+    public int getModel() {
+        return model;
+    }
+
+    public void setModel(int model) {
+        this.model = model;
     }
 }
