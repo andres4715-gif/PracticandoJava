@@ -18,19 +18,21 @@ public class Ejercicio8 {
 
     public static void main(String[] args) {
         ArrayList<Coche> obj = new ArrayList<Coche>();
-        ArrayList<String> marca = new ArrayList<String>();
-        obj.add(new Coche("Chevrolet", 234000));
+        obj.add(new Coche("Chevrolet", 87888));
         obj.add(new Coche("Mazda", 125000));
         obj.add(new Coche("Renault", 189000));
         obj.add(new Coche("Fiat", 345000));
+        obj.add(new Coche("Tesla", 78878));
+
+        ArrayList<String> marcaDeCoches = new ArrayList<String>();
+        for (Coche coches : obj) {
+            marcaDeCoches.add(coches.getMarca());
+        }
+        System.out.println("Las marcas de los coches son: " + marcaDeCoches);
 
         ArrayList<String> cochesConMenosKilometrajeDefinido = Ejercicio8.cochesConKilometrajeMenor(obj, 200000);
         ArrayList<String> cochesConMayorKilometrajeDefinido = Ejercicio8.cochesConKilometrajeMayor(obj, 200000);
 
-        for (Coche coches : obj) {
-            marca.add(coches.getMarca());
-        }
-        System.out.println("Las marcas de los coches son: " + marca);
         System.out.println("Los coches con Menor kilimetrage definido son: " + cochesConMenosKilometrajeDefinido);
         System.out.println("Los coches con Mayor kilimetrage definido son: " + cochesConMayorKilometrajeDefinido);
     }
