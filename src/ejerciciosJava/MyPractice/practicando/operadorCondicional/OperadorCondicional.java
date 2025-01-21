@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.operadorCondicional;
+package ejerciciosJava.MyPractice.practicando.operadorCondicional;
 
 public class OperadorCondicional {
     public static void main(String[] args) {
