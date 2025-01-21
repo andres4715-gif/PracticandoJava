@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicing;
+package ejerciciosJava.MyPractice.practicando;
 
 public class NearToZero {
     public static int findClosestToZero(int[] arr) {

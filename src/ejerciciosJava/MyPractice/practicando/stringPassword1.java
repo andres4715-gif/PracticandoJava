@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicing;
+package ejerciciosJava.MyPractice.practicando;
 
 public class stringPassword1 {
     public static void main(String[] args) {

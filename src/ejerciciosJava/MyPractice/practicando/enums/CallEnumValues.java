@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicing.enums;
+package ejerciciosJava.MyPractice.practicando.enums;
 
 public class CallEnumValues {
 
