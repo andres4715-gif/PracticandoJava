@@ -1,17 +1,4 @@
 package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio8;
-
-/*
-            En esta entrada vamos a escribir un programa Java que crea un ArrayList de Objetos de tipo Coche.
-            El programa pide por teclado los datos de los coches y los guarda en el array.
-            A continuación utilizará el ArrayList para mostrar por pantalla lo siguiente:
-            Todos los coches introducidos.
-            Todos los coches de una marca determinada.
-            Todos los coches con menos de un número determinado de Kilómetros.
-            El coche con mayor número de Kilómetros.
-
-            http://puntocomnoesunlenguaje.blogspot.com/2013/02/arraylist-de-objetos-en-java.html
-*/
-
 import java.util.ArrayList;
 
 public class Ejercicio8 {
