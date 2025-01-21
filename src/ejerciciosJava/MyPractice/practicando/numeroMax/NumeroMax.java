@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.entrevistas.practicandoListas.numeroMax;
+package ejerciciosJava.MyPractice.practicando.numeroMax;
 
 import java.util.ArrayList;
 import java.util.Arrays;

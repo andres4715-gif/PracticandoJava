@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.entrevistas.POO.ejercicio2.constructores;
+package ejerciciosJava.MyPractice.practicando.constructores;
 
 public class Alumno {
 

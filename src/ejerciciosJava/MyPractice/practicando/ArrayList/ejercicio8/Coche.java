@@ -1,14 +1,13 @@
 package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio8;
 
 public class Coche {
+    private String marca;
+    private double kilometros;
 
     public Coche(String marca, double kilometros) {
         this.marca = marca;
         this.kilometros = kilometros;
     }
-
-    private String marca;
-    private double kilometros;
 
     public String getMarca() {
         return marca;

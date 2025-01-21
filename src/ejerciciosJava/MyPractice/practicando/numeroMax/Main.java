@@ -1,9 +1,9 @@
-package ejerciciosJava.MyPractice.entrevistas.practicandoListas.numeroMax;
+package ejerciciosJava.MyPractice.practicando.numeroMax;
 
 import java.util.Comparator;
 import java.util.List;
 
-import static ejerciciosJava.MyPractice.entrevistas.practicandoListas.numeroMax.NumeroMax.myList;
+import static ejerciciosJava.MyPractice.practicando.numeroMax.NumeroMax.myList;
 
 public class Main {
     public static void main(String[] args) {
