@@ -1,11 +1,11 @@
 package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio8;
 
 public class Coche {
-    private int id;
-    private String marca;
-    private double kilometros;
-    private int model;
-    private String color;
+    private final int id;
+    private final String marca;
+    private final double kilometros;
+    private final int model;
+    private final String color;
 
     public Coche(int id, String marca, double kilometros, int model, String color) {
         this.marca = marca;
