@@ -32,7 +32,7 @@ public class Metodos {
                 .filter(coche -> coche.getModel() > year)
                 .toList();
 
-        System.out.println("===========================================");
+        System.out.println("--- ✅ Coches Modernos");
         // Imprimir los resultados
         filterCar.forEach(coche -> System.out.println(
                 "ID: " + coche.getId() +
@@ -41,5 +41,23 @@ public class Metodos {
                         ", Modelo: " + coche.getModel() +
                         ", Color: " + coche.getColor()
         ));
+    }
+
+    // Validar los coches disponibles con modelo mayor al 2015
+    public static List<Coche> cochesDisponibles(ArrayList<Coche> obj) {
+        List<Coche> disponibilidad = obj.stream()
+                .filter(coche -> coche.getModel() > 2015)
+                .filter(Coche::getDisponibilidad)
+                .toList();
+
+        System.out.println("--- ✅ Disponibilidad");
+        disponibilidad.forEach(coche -> System.out.println(
+                "ID: " + coche.getId() +
+                        ", Marca: " + coche.getMarca() +
+                        ", Kilómetros: " + coche.getKilometros() +
+                        ", Modelo: " + coche.getModel() +
+                        ", Color: " + coche.getColor()
+        ));
+        return disponibilidad;
     }
 }

@@ -1,17 +1,20 @@
 package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio8;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
-public class Main extends Metodos{
+public class Main extends Metodos {
 
     public static void main(String[] args) {
         ArrayList<Coche> obj = new ArrayList<Coche>();
-        obj.add(new Coche(895, "Renault", 189000, 2015, "Verde"));
-        obj.add(new Coche(101, "Chevrolet", 87888, 2000, "Blanco"));
-        obj.add(new Coche(340, "Mazda", 125000, 1980, "Gris"));
-        obj.add(new Coche(567, "Fiat", 345000, 1985, "Morado"));
-        obj.add(new Coche(898, "Tesla", 78878, 2025, "Negro"));
+        obj.add(new Coche(895, "Renault", 189000, 2015, "Verde", true));
+        obj.add(new Coche(101, "Chevrolet", 87888, 2000, "Blanco", false));
+        obj.add(new Coche(340, "Mazda", 125000, 1980, "Gris", true));
+        obj.add(new Coche(567, "Fiat", 345000, 1985, "Morado", false));
+        obj.add(new Coche(898, "Tesla", 78878, 2025, "Negro", true));
+        obj.add(new Coche(941, "BMW", 78889, 2025, "Gris special", true));
 
         // Obtener una lista de las marcas de carros:
         ArrayList<String> marcaDeCoches = new ArrayList<String>();
@@ -43,5 +46,8 @@ public class Main extends Metodos{
 
         // Obteniendo los coches modernos con un año definido como año de carros modernos.
         cochesModernos(obj, 2000);
+
+        // Validar los coches disponibles con modelo mayor al 2015
+        cochesDisponibles(obj);
     }
 }

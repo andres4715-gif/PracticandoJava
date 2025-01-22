@@ -6,13 +6,15 @@ public class Coche {
     private final double kilometros;
     private final int model;
     private final String color;
+    private final boolean disponibilidad;
 
-    public Coche(int id, String marca, double kilometros, int model, String color) {
+    public Coche(int id, String marca, double kilometros, int model, String color, boolean disponibilidad) {
         this.marca = marca;
         this.kilometros = kilometros;
         this.model = model;
         this.color = color;
         this.id = id;
+        this.disponibilidad = disponibilidad;
     }
 
     public int getId() {
@@ -33,5 +35,9 @@ public class Coche {
 
     public String getColor() {
         return color;
+    }
+
+    public boolean getDisponibilidad() {
+        return disponibilidad;
     }
 }
