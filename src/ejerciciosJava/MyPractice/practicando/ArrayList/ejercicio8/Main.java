@@ -6,7 +6,7 @@ import java.util.List;
 public class Main extends Metodos {
 
     public static void main(String[] args) {
-        List<Coche> obj = new ArrayList<Coche>();
+        List<Coche> obj = new ArrayList<>();
         obj.add(new Coche(895, "Renault", 189000, 2015, "Verde", true));
         obj.add(new Coche(101, "Chevrolet", 87888, 2000, "Blanco", false));
         obj.add(new Coche(340, "Mazda", 125000, 1980, "Gris", true));
@@ -15,7 +15,7 @@ public class Main extends Metodos {
         obj.add(new Coche(941, "BMW", 78889, 2025, "Gris special", true));
 
         // Obtener una lista de las marcas de carros:
-        ArrayList<String> marcaDeCoches = new ArrayList<String>();
+        ArrayList<String> marcaDeCoches = new ArrayList<>();
         for (Coche myCoche : obj) {
             marcaDeCoches.add(myCoche.getMarca());
         }

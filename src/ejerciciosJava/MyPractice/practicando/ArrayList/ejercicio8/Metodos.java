@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Metodos {
 
-    public static ArrayList<String> cochesConKilometrajeMenor200000(List<Coche> myCoche, double dataKilometraje) {
-        ArrayList<String> determinadoKilometraje = new ArrayList<String>();
+    public static List<String> cochesConKilometrajeMenor200000(List<Coche> myCoche, double dataKilometraje) {
+        List<String> determinadoKilometraje = new ArrayList<String>();
 
         for (Coche data : myCoche) {
             if (data.getKilometros() < dataKilometraje) {
@@ -16,8 +16,8 @@ public class Metodos {
         return determinadoKilometraje;
     }
 
-    public static ArrayList<String> cochesConKilometrajeMayor200000(List<Coche> myCoche, double dataKilometraje) {
-        ArrayList<String> determinadoKilometraje = new ArrayList<String>();
+    public static List<String> cochesConKilometrajeMayor200000(List<Coche> myCoche, double dataKilometraje) {
+        List<String> determinadoKilometraje = new ArrayList<String>();
 
         for (Coche data : myCoche) {
             if (data.getKilometros() > dataKilometraje) {
@@ -44,8 +44,8 @@ public class Metodos {
     }
 
     // Validar los coches disponibles con modelo mayor al 2015
-    public static List<Coche> cochesDisponibles(List<Coche> obj) {
-        List<Coche> disponibilidad = obj.stream()
+    public static List<Coche> cochesDisponibles(List<Coche> objeto) {
+        List<Coche> disponibilidad = objeto.stream()
                 .filter(coche -> coche.getModel() > 2015)
                 .filter(Coche::getDisponibilidad)
                 .toList();
