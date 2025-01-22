@@ -10,21 +10,19 @@ package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main extends Metodos{
+public class Main{
     public static void main(String[] args) {
+
         List<Double> alturas = new ArrayList<>();
             alturas.add(174.7);
             alturas.add(173.5);
             alturas.add(176.3);
             alturas.add(172.3);
 
-        double media = alturaMedia(alturas);
+        EstadisticasAltura estadisticas = Metodos.calcularEstadisticas(alturas);
 
-        int masAltos = calcularCantidadAlumnosMasAltosDeLaMedia(alturas, media);
-        int masBajos = calcularCantidadAlumnosMasBajosDeLaMedia(alturas, media);
-
-        System.out.println("La altura media de los " + media);
-        System.out.println("La cantidad de alumnos mas altos de la media: " + masAltos);
-        System.out.println("La cantidad de alumnos mas bajos de la media: " + masBajos);
+        System.out.println("La altura media de los " + estadisticas.getAlturaMedia());
+        System.out.println("La cantidad de alumnos mas altos de la media: " + estadisticas.getCantidadMasAltos());
+        System.out.println("La cantidad de alumnos mas bajos de la media: " + estadisticas.getCantidadMasBajos());
     }
 }

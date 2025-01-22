@@ -4,32 +4,39 @@ import java.util.List;
 
 public class Metodos {
 
-    static double dataAltura = 0;
-    static int contadorMasAltosDeLaMedia = 0;
-    static int contadorMasBajosDeLaMedia = 0;
+    public static EstadisticasAltura calcularEstadisticas(List<Double> alturas) {
+        double alturaMedia = alturaMedia(alturas);
+        int cantidadMasAltos = calcularCantidadAlumnosMasAltosDeLaMedia(alturas, alturaMedia);
+        int cantidadMasBajos = calcularCantidadAlumnosMasBajosDeLaMedia(alturas, alturaMedia);
 
-    protected static double alturaMedia(List<Double> alturas) {
-        for (Double sumarAltura : alturas) {
-            dataAltura += sumarAltura;
-        }
-        return (dataAltura / alturas.size());
+        return new EstadisticasAltura(alturaMedia, cantidadMasAltos, cantidadMasBajos);
     }
 
-    protected static int calcularCantidadAlumnosMasAltosDeLaMedia(List<Double> alturas, double media) {
+    private static double alturaMedia(List<Double> alturas) {
+        double sumaAlturas = 0;
+        for (Double sumarAltura : alturas) {
+            sumaAlturas += sumarAltura;
+        }
+        return (sumaAlturas / alturas.size());
+    }
+
+    private static int calcularCantidadAlumnosMasAltosDeLaMedia(List<Double> alturas, double media) {
+        int contador = 0;
         for (Double sumarAltura : alturas) {
             if (sumarAltura > media) {
-                contadorMasAltosDeLaMedia++;
+                contador++;
             }
         }
-        return contadorMasAltosDeLaMedia;
+        return contador;
     }
 
-    protected static int calcularCantidadAlumnosMasBajosDeLaMedia(List<Double> alturas, double media) {
+    private static int calcularCantidadAlumnosMasBajosDeLaMedia(List<Double> alturas, double media) {
+        int contador = 0;
         for (Double sumarAltura : alturas) {
             if (sumarAltura < media) {
-                contadorMasBajosDeLaMedia++;
+                contador++;
             }
         }
-        return contadorMasBajosDeLaMedia;
+        return contador;
     }
 }
