@@ -71,7 +71,7 @@ public class Main {
     public static void cochesModernos(ArrayList<Coche> myCoche, int year) {
         List<Coche> filterCar = myCoche.stream()
                 .filter(coche -> coche.getModel() > year)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("===========================================");
         // Imprimir los resultados
