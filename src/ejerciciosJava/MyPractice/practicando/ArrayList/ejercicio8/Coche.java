@@ -4,18 +4,16 @@ public class Coche {
     private String marca;
     private double kilometros;
     private int model;
+    private String color;
 
-    public Coche(String marca, double kilometros, int model) {
+    public Coche(String marca, double kilometros, int model, String color) {
         this.marca = marca;
         this.kilometros = kilometros;
         this.model = model;
+        this.color = color;
     }
 
     public String getMarca() {
-        return marca;
-    }
-
-    public String setMarca(String marca) {
         return marca;
     }
 
@@ -23,15 +21,11 @@ public class Coche {
         return kilometros;
     }
 
-    public double setKilometros(double kilometros) {
-        return kilometros;
-    }
-
     public int getModel() {
         return model;
     }
 
-    public void setModel(int model) {
-        this.model = model;
+    public String getColor() {
+        return color;
     }
 }
