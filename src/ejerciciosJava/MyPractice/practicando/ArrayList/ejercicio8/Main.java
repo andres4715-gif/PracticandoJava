@@ -1,14 +1,12 @@
 package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio8;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Main extends Metodos {
 
     public static void main(String[] args) {
-        ArrayList<Coche> obj = new ArrayList<Coche>();
+        List<Coche> obj = new ArrayList<Coche>();
         obj.add(new Coche(895, "Renault", 189000, 2015, "Verde", true));
         obj.add(new Coche(101, "Chevrolet", 87888, 2000, "Blanco", false));
         obj.add(new Coche(340, "Mazda", 125000, 1980, "Gris", true));
@@ -38,8 +36,8 @@ public class Main extends Metodos {
         System.out.println("La lista de colores de los carros disponibles es: " + colores);
 
         // Utilizando los metodos generados
-        ArrayList<String> cochesConMenosKilometrajeDefinido = cochesConKilometrajeMenor200000(obj, 200000);
-        ArrayList<String> cochesConMayorKilometrajeDefinido = cochesConKilometrajeMayor200000(obj, 200000);
+        List<String> cochesConMenosKilometrajeDefinido = cochesConKilometrajeMenor200000(obj, 200000);
+        List<String> cochesConMayorKilometrajeDefinido = cochesConKilometrajeMayor200000(obj, 200000);
 
         System.out.println("Los coches con Menor kilimetrage definido son: " + cochesConMenosKilometrajeDefinido);
         System.out.println("Los coches con Mayor kilimetrage definido son: " + cochesConMayorKilometrajeDefinido);
