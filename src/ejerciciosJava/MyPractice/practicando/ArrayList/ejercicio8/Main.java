@@ -2,16 +2,17 @@ package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio8;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
     public static void main(String[] args) {
         ArrayList<Coche> obj = new ArrayList<Coche>();
-        obj.add(new Coche("Renault", 189000, 2015, "Verde"));
-        obj.add(new Coche("Chevrolet", 87888, 2000, "Blanco"));
-        obj.add(new Coche("Mazda", 125000, 2010, "Gris"));
-        obj.add(new Coche("Fiat", 345000, 2017, "Morado"));
-        obj.add(new Coche("Tesla", 78878, 2025, "Negro"));
+        obj.add(new Coche(895, "Renault", 189000, 2015, "Verde"));
+        obj.add(new Coche(101, "Chevrolet", 87888, 2000, "Blanco"));
+        obj.add(new Coche(340, "Mazda", 125000, 1980, "Gris"));
+        obj.add(new Coche(567, "Fiat", 345000, 1985, "Morado"));
+        obj.add(new Coche(898, "Tesla", 78878, 2025, "Negro"));
 
         // Obtener una lista de las marcas de carros:
         ArrayList<String> marcaDeCoches = new ArrayList<String>();
@@ -40,6 +41,9 @@ public class Main {
 
         System.out.println("Los coches con Menor kilimetrage definido son: " + cochesConMenosKilometrajeDefinido);
         System.out.println("Los coches con Mayor kilimetrage definido son: " + cochesConMayorKilometrajeDefinido);
+
+        // Obteniendo los coches modernos con un año definido como año de carros modernos.
+        cochesModernos(obj, 2000);
     }
 
     public static ArrayList<String> cochesConKilometrajeMenor200000(ArrayList<Coche> myCoche, double dataKilometraje) {
@@ -62,5 +66,21 @@ public class Main {
             }
         }
         return determinadoKilometraje;
+    }
+
+    public static void cochesModernos(ArrayList<Coche> myCoche, int year) {
+        List<Coche> filterCar = myCoche.stream()
+                .filter(coche -> coche.getModel() > year)
+                .collect(Collectors.toList());
+
+        System.out.println("===========================================");
+        // Imprimir los resultados
+        filterCar.forEach(coche -> System.out.println(
+                "ID: " + coche.getId() +
+                        ", Marca: " + coche.getMarca() +
+                        ", Kilómetros: " + coche.getKilometros() +
+                        ", Modelo: " + coche.getModel() +
+                        ", Color: " + coche.getColor()
+        ));
     }
 }
