@@ -5,7 +5,6 @@ import java.util.List;
 
 public class MetodosAhorros {
 
-    // TODO hacer esto con un enum
     // Nombres de los meses
     static final String[] NOMBRES_MESES = {
             "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
