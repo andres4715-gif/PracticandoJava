@@ -5,7 +5,7 @@ import java.util.List;
 
 public class MetodosAhorros {
 
-    // Nombres de los meses
+    // Array de meses del año.
     static final String[] NOMBRES_MESES = {
             "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
