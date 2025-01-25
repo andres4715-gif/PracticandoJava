@@ -15,7 +15,8 @@ public class MetodosAhorros {
         double myTotalAhorrado = totalAhorrado(ahorroMes);
         double montoMayorAhorrado = valorMayorAhorro(ahorroMes);
         String mesMayorAhorro = mesMayorAhorro(ahorroMes);
-        return new AhorrosAnuales(myTotalAhorrado, montoMayorAhorrado, mesMayorAhorro);
+        String mesMenorAhorro = mesMenorAhorro(ahorroMes);
+        return new AhorrosAnuales(myTotalAhorrado, montoMayorAhorrado, mesMayorAhorro, mesMenorAhorro);
     }
 
     private static double totalAhorrado(List<Double> ahorroMes) {
@@ -34,7 +35,7 @@ public class MetodosAhorros {
 
     private static String mesMayorAhorro(List<Double> ahorroMes) {
         double max = ahorroMes.get(0); // Asumimos que el primer elemento es el máximo inicial
-        int indiceMax = 0; // Guardamos el índice del máximo\
+        int indiceMax = 0; // Guardamos el índice del máximo
         String mes;
 
         // Recorremos la lista desde el segundo elemento
@@ -45,6 +46,22 @@ public class MetodosAhorros {
             }
         }
         mes = NOMBRES_MESES[indiceMax];
+        return mes;
+    }
+
+    private static String mesMenorAhorro(List<Double> ahorroMes) {
+        double min = ahorroMes.get(0); // Asumimos que el primer elemento es el minimo inicial
+        int indiceMin = 0; // Guardamos el índice del minimo
+        String mes;
+
+        // Recorremos la lista desde el segundo elemento
+        for (int i = 1; i < ahorroMes.size(); i++) {
+            if (ahorroMes.get(i) < min) {
+                min = ahorroMes.get(i);
+                indiceMin = i;
+            }
+        }
+        mes = NOMBRES_MESES[indiceMin];
         return mes;
     }
 }

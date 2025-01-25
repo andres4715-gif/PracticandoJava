@@ -5,17 +5,15 @@ public class AhorrosAnuales {
     private final double totalAhorrado;
     private final double valorMayorAhorro;
     private final String mesMayorAhorro;
-//    private final double montoMayorAhorro;
-//    private final String mesMenorAhorro;
+    private final String mesMenorAhorro;
 //    private final double montoMenorAhorro;
 //    private final double promedioAhorro;
 
-    public AhorrosAnuales(double totalAhorrado, double valorMayorAhorro, String mesMayorAhorro ) {
+    public AhorrosAnuales(double totalAhorrado, double valorMayorAhorro, String mesMayorAhorro, String mesMenorAhorro) {
         this.totalAhorrado = totalAhorrado;
         this.valorMayorAhorro = valorMayorAhorro;
         this.mesMayorAhorro = mesMayorAhorro;
-//        this.montoMayorAhorro = montoMayorAhorro;
-//        this.mesMenorAhorro = mesMenorAhorro;
+        this.mesMenorAhorro = mesMenorAhorro;
 //        this.montoMenorAhorro = montoMenorAhorro;
 //        this.promedioAhorro = promedioAhorro;
     }
@@ -32,13 +30,9 @@ public class AhorrosAnuales {
         return mesMayorAhorro;
     }
 
-//    public double getMontoMayorAhorro() {
-//        return montoMayorAhorro;
-//    }
-
-//    public String getMesMenorAhorro() {
-//        return mesMenorAhorro;
-//    }
+    public String getMesMenorAhorro() {
+        return mesMenorAhorro;
+    }
 
 //    public double getMontoMenorAhorro() {
 //        return montoMenorAhorro;
