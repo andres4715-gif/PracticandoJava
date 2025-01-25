@@ -3,7 +3,7 @@ package ejerciciosJava.MyPractice.practicando.ArrayList;
 /*
         Programa Java para calcular el String de mayor longitud de todos los contenidos en un ArrayList de String.
 
-        Método cadenaMasLarga():este método recibe como parámetro el ArrayList de Strings con todas las cadenas leídas
+        Metodo cadenaMasLarga():este metodo recibe como parámetro el ArrayList de Strings con todas las cadenas leídas
         anteriormente y devuelve el String de mayor longitud.
 */
 
