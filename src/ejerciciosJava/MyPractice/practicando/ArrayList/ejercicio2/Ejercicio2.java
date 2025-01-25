@@ -5,22 +5,27 @@ import java.util.List;
 
 public class Ejercicio2 {
 
-    protected static List<Integer> data() {
-        List<Integer> myDataList = new ArrayList<Integer>();
-        myDataList.add(123);
-        myDataList.add(12);
-        myDataList.add(13);
-        myDataList.add(100);
+    public static Models calculandoDatos(List<Integer> data) {
+        List<Integer> getData = data(data);
+        int getAmount = amount(data);
+        int getSumaData = sumaData(data);
+        double getMedia = media(data);
+        List<Integer> getMayorDelPromedio = mayoresDelPromedio(data);
+        List<Integer> getMenorDelPromedio = menoresDelPromedio(data);
 
-        return myDataList;
+        return new Models(getData, getAmount, getSumaData, getMedia, getMayorDelPromedio, getMenorDelPromedio);
     }
 
-    protected static int amount(List<Integer> data) {
+    protected static List<Integer> data(List<Integer> data) {
+        return data;
+    }
+
+    private static int amount(List<Integer> data) {
         int checkAmount = data.size();
         return checkAmount;
     }
 
-    protected static int sumaData(List<Integer> data) {
+    private static int sumaData(List<Integer> data) {
         int checkSuma = 0;
         for (int sumando : data) {
             checkSuma += sumando;
@@ -28,7 +33,7 @@ public class Ejercicio2 {
         return checkSuma;
     }
 
-    protected static double media(List<Integer> data) {
+    private static double media(List<Integer> data) {
         double operation = 0;
         double media = 0;
         for (Integer sumando : data) {
@@ -38,7 +43,7 @@ public class Ejercicio2 {
         return operation;
     }
 
-    protected static List<Integer> mayoresDelPromedio(List<Integer> data) {
+    private static List<Integer> mayoresDelPromedio(List<Integer> data) {
         List<Integer> mayores = new ArrayList<Integer>();
         double operation = 0;
         for (int check : data) {
@@ -49,7 +54,7 @@ public class Ejercicio2 {
         return mayores;
     }
 
-    protected static List<Integer> menoresDelPromedio(List<Integer> data) {
+    private static List<Integer> menoresDelPromedio(List<Integer> data) {
         List<Integer> menores = new ArrayList<Integer>();
         double operation = 0;
         for (int check : data) {

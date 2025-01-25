@@ -1,5 +1,6 @@
 package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio2;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio2.Ejercicio2.*;
@@ -14,17 +15,18 @@ import static ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio2.Ejercic
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> check = data();
-        System.out.println(check);
-        int checkAmount = amount(check);
-        System.out.println(checkAmount);
-        int sumando = sumaData(check);
-        System.out.println("La suma de los numeros es: " + sumando);
-        double media = media(check);
-        System.out.println("La media de los numeros es: " + media);
-        List<Integer> mayoresDeLaMedia = mayoresDelPromedio(check);
-        System.out.println("Data mayor que la media: " + mayoresDeLaMedia);
-        List<Integer> menoresDeLaMedia = menoresDelPromedio(check);
-        System.out.println("Data menor que la media: " + menoresDeLaMedia);
+        List<Integer> myDataList = new ArrayList<Integer>();
+        myDataList.add(123);
+        myDataList.add(12);
+        myDataList.add(13);
+        myDataList.add(100);
+
+        Models models = Ejercicio2.calculandoDatos(myDataList);
+        System.out.println(models.getData());
+        System.out.println(models.getAmount());
+        System.out.println("La suma de los numeros es: " + models.getSumaData());
+        System.out.println("La media de los numeros es: " + models.getMedia());
+        System.out.println("Data mayor que la media: " + models.getMayoresDelPromedio());
+        System.out.println("Data menor que la media: " + models.getMenoresDelPromedio());
     }
 }
