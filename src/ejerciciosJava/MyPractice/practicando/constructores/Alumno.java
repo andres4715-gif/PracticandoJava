@@ -32,17 +32,17 @@ public class Alumno {
 
     public boolean mayorDeEdad(int edadPermitida) {
         boolean ingreso;
-        if(this.edad > edadPermitida) {
+        if (this.edad > edadPermitida) {
             ingreso = true;
-        }else {
+        } else {
             ingreso = false;
         }
         return ingreso;
     }
 
-    public void gettingFakeData (int dato1, int dato2) {
+    public void gettingFakeData(int dato1, int dato2) {
         int respuesta = dato1 + dato2;
-        System.out.println("--- La data que se quiere obtner es: " + respuesta);
+        System.out.println("--- La data que se quiere obtener es: " + respuesta);
     }
 
     public boolean mayoriaEdad(int limite) {
