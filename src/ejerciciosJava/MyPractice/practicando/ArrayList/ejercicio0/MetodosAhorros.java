@@ -16,7 +16,10 @@ public class MetodosAhorros {
         double montoMayorAhorrado = valorMayorAhorro(ahorroMes);
         String mesMayorAhorro = mesMayorAhorro(ahorroMes);
         String mesMenorAhorro = mesMenorAhorro(ahorroMes);
-        return new AhorrosAnuales(myTotalAhorrado, montoMayorAhorrado, mesMayorAhorro, mesMenorAhorro);
+        double montoMenorAhorro = montoMenorAhorro(ahorroMes);
+        double promedioAhorro = promedioAhorro(ahorroMes);
+
+        return new AhorrosAnuales(myTotalAhorrado, montoMayorAhorrado, mesMayorAhorro, mesMenorAhorro, montoMenorAhorro, promedioAhorro);
     }
 
     private static double totalAhorrado(List<Double> ahorroMes) {
@@ -63,5 +66,21 @@ public class MetodosAhorros {
         }
         mes = NOMBRES_MESES[indiceMin];
         return mes;
+    }
+
+    private static double montoMenorAhorro(List<Double> ahorroMes) {
+        double min = ahorroMes.stream()
+                .min(Comparator.comparing(Double::valueOf)).get();
+        return min;
+    }
+
+    private static double promedioAhorro(List<Double> ahorroMes) {
+        double myAhorroTotal = 0;
+        int totalMeses = ahorroMes.size();
+
+        for (Double data : ahorroMes) {
+            myAhorroTotal += data;
+        }
+        return myAhorroTotal / totalMeses;
     }
 }

@@ -17,7 +17,7 @@ public class main {
         ahorrosMensuales.add(300000.0);  // Julio
         ahorrosMensuales.add(80000.0);   // Agosto
         ahorrosMensuales.add(250000.0);  // Septiembre
-        ahorrosMensuales.add(17000.0);  // Octubre
+        ahorrosMensuales.add(170000.0);  // Octubre
         ahorrosMensuales.add(800000.0);  // Noviembre
         ahorrosMensuales.add(140000.0);  // Diciembre
 
@@ -26,5 +26,7 @@ public class main {
         System.out.println("--- 🚀 Mayor valor ahorrado: " + ahorros.getValorMayorAhorro());
         System.out.println("--- 🚀 Mes Mayor valor ahorrado: " + ahorros.getMesMayorAhorro());
         System.out.println("--- 🚀 Mes Menor valor ahorrado: " + ahorros.getMesMenorAhorro());
+        System.out.println("--- 🚀 Monto menor ahorro: " + ahorros.getMontoMenorAhorro());
+        System.out.println("--- 🚀 Promedio ahorro: " + ahorros.getPromedioAhorro());
     }
 }
