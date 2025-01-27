@@ -1,4 +1,9 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList;
+package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio3.Ejercicio3.data;
 
 /*
 
@@ -28,20 +33,10 @@ De forma que el contenido final de Array sea este:
 
 */
 
-import java.util.ArrayList;
-
-public class Ejercicio3 {
-
+public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> myData = data();
-        int hi = myData.get(myData.size() - 1);
-        myData.remove(myData.size() - 1);
-        myData.add(0, hi);
-        System.out.println(myData);
-    }
 
-    private static ArrayList<Integer> data() {
-        ArrayList<Integer> data = new ArrayList<Integer>();
+        List<Integer> data = new ArrayList<Integer>();
         data.add(15);
         data.add(22);
         data.add(4);
@@ -49,6 +44,7 @@ public class Ejercicio3 {
         data.add(71);
         data.add(10);
         data.add(2);
-        return data;
+
+        Ejercicio3.data(data);
     }
 }
