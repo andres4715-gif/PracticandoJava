@@ -9,7 +9,9 @@ public class OrdenarArrayNumerosConStream {
         List<Integer> numbers = Arrays.asList(1, 5, 3, 7, 9, 898);
 
         // Organizar con el stream de forma ASC
-        List<Integer> newListNumberAsc = numbers.stream().sorted().toList();
+        List<Integer> newListNumberAsc = numbers.stream()
+                .sorted()
+                .toList();
         System.out.println(newListNumberAsc);
 
         // Organizar con el stream de forma DESC

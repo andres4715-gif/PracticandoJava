@@ -9,6 +9,6 @@ public class StreamsFilter extends Operations{
 
         List<String> names = Arrays.asList(
                 "John", "Mariam", "Alex", "Alexo", "Monica");
-        System.out.println(myData(names, "m"));
+        System.out.println(myData(names, "M"));
     }
 }
