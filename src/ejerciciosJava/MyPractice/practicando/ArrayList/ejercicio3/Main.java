@@ -3,8 +3,6 @@ package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio3;
 import java.util.ArrayList;
 import java.util.List;
 
-import static ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio3.Ejercicio3.data;
-
 /*
 
 Rotar los elementos de un ArrayList en Java
@@ -45,6 +43,7 @@ public class Main {
         data.add(10);
         data.add(2);
 
-        Ejercicio3.data(data);
+        ListaDeNumeros listaDeNumeros = Ejercicio3.metodosLista(data);
+        System.out.println(listaDeNumeros.getOrdenarLista());
     }
 }
