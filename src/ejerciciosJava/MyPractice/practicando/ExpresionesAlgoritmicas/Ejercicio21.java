@@ -9,7 +9,7 @@ public class Ejercicio21 {
 
         // Sumar el dígito más a la derecha de N al propio valor de N.
 
-        int numero =  45, sumando = numero % 10, total = numero + sumando;
+        int numero = 45, sumando = numero % 10, total = numero + sumando;
         System.out.println("El numero mas el ultimo numero da un valor de: " + total);
     }
 }

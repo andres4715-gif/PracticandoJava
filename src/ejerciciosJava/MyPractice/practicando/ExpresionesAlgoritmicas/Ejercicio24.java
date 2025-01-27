@@ -10,13 +10,7 @@ public class Ejercicio24 {
         // Quitarle a un número entero N su última cifra. Supondremos que N tiene más de una cifra.
 
         int N = 53487879;
-        int nuevoN = N/10;
+        int nuevoN = N / 10;
         System.out.println(nuevoN);
-
-
-
-
-
-
     }
 }

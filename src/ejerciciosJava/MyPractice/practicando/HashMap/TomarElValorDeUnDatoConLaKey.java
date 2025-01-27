@@ -6,7 +6,6 @@ public class TomarElValorDeUnDatoConLaKey {
 
     static String seleccionDeCalzado = "tenis adidas 2";
 
-
     public static void main(String[] args) {
         HashMap<String, Integer> calzado = new HashMap<>();
         calzado.put("sandaliaReina", 36);

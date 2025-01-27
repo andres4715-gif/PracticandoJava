@@ -11,7 +11,7 @@ public class Ejercicio12 {
 
         char letra = 'A';
         boolean checkLetra = letra >= 'A' && letra <= 'Z';
-        System.out.println("El caracter es mayuscula?: "  + checkLetra);
+        System.out.println("El caracter es mayuscula?: " + checkLetra);
 
     }
 }

@@ -22,7 +22,7 @@ public class ObtenerLosValoresDeCadaElemeto {
         int contador = 1;
         for (String nombres : calzado.keySet()) {
             System.out.println(nombres + contador);
-            contador ++;
+            contador++;
         }
     }
 }

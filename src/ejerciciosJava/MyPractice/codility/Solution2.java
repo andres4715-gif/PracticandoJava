@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.colidity;
+package ejerciciosJava.MyPractice.codility;
 
 /*
 Se cuenta con una secuencia de caras de moneda debe ser cara y sello representado asi:
