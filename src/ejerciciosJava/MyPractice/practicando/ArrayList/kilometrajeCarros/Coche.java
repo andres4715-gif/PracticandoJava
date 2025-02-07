@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio8;
+package ejerciciosJava.MyPractice.practicando.ArrayList.kilometrajeCarros;
 
 public class Coche {
     private final int id;

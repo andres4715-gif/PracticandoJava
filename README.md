@@ -12,3 +12,9 @@ Para validar el total de ejercicios se puede validar esta [pagina](http://puntoc
 9. Como se suman todos los valores de una lista
 10. Como se trabaja con los objetos
 11. Como trabajar con los map
+
+# En que voy 🚀🚚🛠️🚧
+- Debo arreglar el POO de este ejercicio:
+```properties
+src/ejerciciosJava/MyPractice/practicando/ArrayList/kilometrajeCarros
+```
