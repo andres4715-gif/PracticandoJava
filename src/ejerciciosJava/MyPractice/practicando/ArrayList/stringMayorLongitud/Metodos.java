@@ -1,10 +1,10 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio4;
+package ejerciciosJava.MyPractice.practicando.ArrayList.stringMayorLongitud;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class Ejercicio4 {
+public class Metodos {
 
     public static Model ejercicio4Metodos(List<String> myData) {
         List<String> finalData = validatingData(myData);

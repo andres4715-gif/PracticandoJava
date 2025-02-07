@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio4;
+package ejerciciosJava.MyPractice.practicando.ArrayList.stringMayorLongitud;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class Main {
         myData.add("socket");
         myData.add("belt");
 
-        Model model = Ejercicio4.ejercicio4Metodos(myData);
+        Model model = Metodos.ejercicio4Metodos(myData);
         System.out.println(model.getStringMasLargo());
     }
 }

@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio4;
+package ejerciciosJava.MyPractice.practicando.ArrayList.stringMayorLongitud;
 
 import java.util.List;
 
