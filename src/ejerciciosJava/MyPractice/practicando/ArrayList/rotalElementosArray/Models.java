@@ -1,12 +1,12 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio3;
+package ejerciciosJava.MyPractice.practicando.ArrayList.rotalElementosArray;
 
 import java.util.List;
 
-public class ListaDeNumeros {
+public class Models {
 
     private final List<Integer> ordenarLista;
 
-    public ListaDeNumeros(List<Integer> ordenarLista ) {
+    public Models(List<Integer> ordenarLista) {
         this.ordenarLista = ordenarLista;
     }
 
