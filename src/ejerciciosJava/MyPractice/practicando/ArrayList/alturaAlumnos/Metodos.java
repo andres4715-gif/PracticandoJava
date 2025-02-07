@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio1;
+package ejerciciosJava.MyPractice.practicando.ArrayList.alturaAlumnos;
 
 import java.util.List;
 

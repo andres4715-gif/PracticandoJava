@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio1;
+package ejerciciosJava.MyPractice.practicando.ArrayList.alturaAlumnos;
 
 public class EstadisticasAltura {
     private final double alturaMedia;

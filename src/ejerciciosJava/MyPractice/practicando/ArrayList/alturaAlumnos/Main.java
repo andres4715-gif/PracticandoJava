@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio1;
+package ejerciciosJava.MyPractice.practicando.ArrayList.alturaAlumnos;
 
 /*
  Programa Java que pida por teclado las alturas de N alumnos de una clase y las guarde en un
