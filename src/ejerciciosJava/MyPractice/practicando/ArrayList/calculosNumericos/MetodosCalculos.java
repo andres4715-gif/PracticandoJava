@@ -6,7 +6,7 @@ import java.util.List;
 public class MetodosCalculos {
 
     public static Models calculandoDatos(List<Integer> data) {
-        List<Integer> getData = data(data);
+        List<Integer> getData = dataList(data);
         int getAmount = amount(data);
         int getSumaData = sumaData(data);
         double getMedia = media(data);
@@ -16,7 +16,7 @@ public class MetodosCalculos {
         return new Models(getData, getAmount, getSumaData, getMedia, getMayorDelPromedio, getMenorDelPromedio);
     }
 
-    protected static List<Integer> data(List<Integer> data) {
+    protected static List<Integer> dataList(List<Integer> data) {
         return data;
     }
 
@@ -34,13 +34,11 @@ public class MetodosCalculos {
     }
 
     private static double media(List<Integer> data) {
-        double operation = 0;
         double media = 0;
         for (Integer sumando : data) {
             media += sumando;
-            operation = media / data.size();
         }
-        return operation;
+        return media / data.size();
     }
 
     private static List<Integer> mayoresDelPromedio(List<Integer> data) {
