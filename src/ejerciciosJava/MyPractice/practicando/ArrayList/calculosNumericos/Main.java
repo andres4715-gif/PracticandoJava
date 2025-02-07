@@ -1,9 +1,7 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio2;
+package ejerciciosJava.MyPractice.practicando.ArrayList.calculosNumericos;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio2.Ejercicio2.*;
 
 /*
    Programa Java que lea una serie de valores numéricos enteros desde el teclado y los guarde en un ArrayList de tipo Integer.
@@ -21,7 +19,7 @@ public class Main {
         myDataList.add(13);
         myDataList.add(100);
 
-        Models models = Ejercicio2.calculandoDatos(myDataList);
+        Models models = MetodosCalculos.calculandoDatos(myDataList);
         System.out.println(models.getData());
         System.out.println(models.getAmount());
         System.out.println("La suma de los numeros es: " + models.getSumaData());

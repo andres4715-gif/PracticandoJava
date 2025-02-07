@@ -1,9 +1,9 @@
-package ejerciciosJava.MyPractice.practicando.ArrayList.ejercicio2;
+package ejerciciosJava.MyPractice.practicando.ArrayList.calculosNumericos;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ejercicio2 {
+public class MetodosCalculos {
 
     public static Models calculandoDatos(List<Integer> data) {
         List<Integer> getData = data(data);
