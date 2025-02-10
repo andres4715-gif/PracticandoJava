@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.arrays.ejercicio4;
+package ejerciciosJava.MyPractice.practicando.arrays.operacionMatematicaReturnLists;
 
 import java.util.List;
 

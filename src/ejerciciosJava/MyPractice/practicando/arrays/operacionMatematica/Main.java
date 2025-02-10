@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.arrays.ejercicio2;
+package ejerciciosJava.MyPractice.practicando.arrays.operacionMatematica;
 
 /*
   Programa Java que lea 10 números enteros por teclado y los guarde en un array. Calcula y muestra la media de los números que estén en las posiciones pares del array.

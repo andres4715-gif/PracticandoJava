@@ -1,4 +1,4 @@
-package ejerciciosJava.MyPractice.practicando.arrays.ejercicio2;
+package ejerciciosJava.MyPractice.practicando.arrays.operacionMatematica;
 
 public class Ejercicio2 {
 

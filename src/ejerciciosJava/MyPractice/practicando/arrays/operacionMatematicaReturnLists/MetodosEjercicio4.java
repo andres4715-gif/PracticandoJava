@@ -1,9 +1,8 @@
-package ejerciciosJava.MyPractice.practicando.arrays.ejercicio4;
+package ejerciciosJava.MyPractice.practicando.arrays.operacionMatematicaReturnLists;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class MetodosEjercicio4 {
 
@@ -19,7 +18,7 @@ public class MetodosEjercicio4 {
 
         List<Integer> list = Arrays.stream(myArray)
                 .boxed()
-                .collect(Collectors.toList());
+                .toList();
 
         for (int numero : list) {
             if (numero % 2 == 0) {
