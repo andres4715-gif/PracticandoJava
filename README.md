@@ -14,7 +14,3 @@ Para validar el total de ejercicios se puede validar esta [pagina](http://puntoc
 11. Como trabajar con los map
 
 # En que voy 🚀🚚🛠️🚧
-- Debo arreglar el POO de este ejercicio:
-```properties
-src/ejerciciosJava/MyPractice/practicando/ArrayList/kilometrajeCarros
-```
