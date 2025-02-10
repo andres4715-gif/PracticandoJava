@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Ejercicio8 {
+public class AgregarUnDatoAlArray {
 
     public static void main(String[] args) {
         Integer[] nums = {1, 2, 3, 4};

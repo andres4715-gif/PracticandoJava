@@ -1,6 +1,6 @@
-package ejerciciosJava.MyPractice.practicando.arrays;
+package ejerciciosJava.MyPractice.practicando.EjerciciosGenerales;
 
-public class Ejercicio9 {
+public class IndiceAndValue {
     // Crea un array de 10 posiciones de números .
     // Muestra por consola el indice y el valor al que corresponde
 
