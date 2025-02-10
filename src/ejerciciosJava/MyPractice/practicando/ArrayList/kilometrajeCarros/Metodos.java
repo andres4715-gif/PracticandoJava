@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Metodos {
 
-    protected static List<String> cochesConKilometrajeMenor200000(List<Coche> myCoche, double dataKilometraje) {
+    protected static List<String> cochesConKilometrajeMenor200000(List<Coche> coches, double kilometros) {
         List<String> determinadoKilometraje = new ArrayList<String>();
 
-        for (Coche data : myCoche) {
-            if (data.getKilometros() < dataKilometraje) {
+        for (Coche data : coches) {
+            if (data.getKilometros() < kilometros) {
                 determinadoKilometraje.add(data.getMarca());
             }
         }
@@ -56,7 +56,8 @@ public class Metodos {
                         ", Marca: " + coche.getMarca() +
                         ", Kilómetros: " + coche.getKilometros() +
                         ", Modelo: " + coche.getModel() +
-                        ", Color: " + coche.getColor()
+                        ", Color: " + coche.getColor() +
+                        ", Disponibilidad: " + coche.getDisponibilidad()
         ));
         return disponibilidad;
     }
