@@ -49,6 +49,5 @@ public class Alumno {
         boolean data;
         data = this.edad >= limite;
         return data;
-
     }
 }
