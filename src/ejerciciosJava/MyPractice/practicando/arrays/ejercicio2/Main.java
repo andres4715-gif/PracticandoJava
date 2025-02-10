@@ -11,6 +11,9 @@ public class Main {
         int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
         Model model = Ejercicio2.model(array);
-        model.getTotalOperaciones();
+        System.out.println(model.getSumaPares());
+        System.out.println(model.getSumaImpares());
+        System.out.println(model.getMediaPares());
+        System.out.println(model.getMediaImpares());
     }
 }
