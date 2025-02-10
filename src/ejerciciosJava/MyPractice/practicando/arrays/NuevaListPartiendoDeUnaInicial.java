@@ -1,21 +1,22 @@
 package ejerciciosJava.MyPractice.practicando.arrays;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class Ejercicio7 {
+public class NuevaListPartiendoDeUnaInicial {
 
     // crear un nuevo array partiendo de los datos de otro cumpliendo una condición
 
     public static void main(String[] args) {
-        ArrayList myList = addingDataToTheArrayList(new int[]{11, 21, 31, 41, 51, 61, 71, 80, 90, 100});
+        List myList = addingDataToTheArrayList(new ArrayList<>(List.of(11, 21, 31, 41, 51, 61, 71, 80, 90, 100)));
         System.out.println(myList);
     }
 
-    public static ArrayList addingDataToTheArrayList(int[] myData) {
+    public static ArrayList addingDataToTheArrayList(List<Integer> data) {
         ArrayList<Integer> adding = new ArrayList<Integer>();
-        for (int i = 0; i < myData.length; i++) {
-            if (myData[i] > 50) {
-                adding.add(myData[i]);
+        for (int myData : data) {
+            if (myData > 50) {
+                adding.add(myData);
             }
         }
         return adding;

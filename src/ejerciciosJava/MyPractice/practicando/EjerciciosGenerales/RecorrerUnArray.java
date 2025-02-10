@@ -1,6 +1,6 @@
-package ejerciciosJava.MyPractice.practicando.arrays;
+package ejerciciosJava.MyPractice.practicando.EjerciciosGenerales;
 
-public class Ejercicio6 {
+public class RecorrerUnArray {
 
     /*
         leer un array de atras para adelante
