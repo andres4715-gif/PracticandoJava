@@ -3,9 +3,8 @@ package ejerciciosJava.MyPractice.practicando.arrays;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public class Ejercicio5 {
+public class MatematicasConListas {
 
     /*
         Programa Java que guarda en un array 13 números enteros que se leen por teclado. A continuación se recorre el array
@@ -13,19 +12,17 @@ public class Ejercicio5 {
 
         http://puntocomnoesunlenguaje.blogspot.com/2013/01/java-ejercicios-arrays-resueltos.html
     */
-
-    static int cantidadNumerosPositivos = 0;
-    static int cantidadNumerosNegativos = 0;
-    static int cantidadDeCeros = 0;
-
     public static void main(String[] args) {
-        ArrayList<Integer> listaNumerosEnterosPositivos = new ArrayList<Integer>();
-        ArrayList<Integer> listaNumerosEnterosNegativos = new ArrayList<Integer>();
-        int[] data = {10, 20, 30, 40, 80, -10, -20, -30, -40, -90, 0, 0, 0};
-        List<Integer> list = Arrays.stream(data)
-                .boxed()
-                .collect(Collectors.toList());
-        for (int num : list) {
+        List<Integer>data = new ArrayList<>(List.of(10, 20, 30, 40, 80, -10, -20, -30, -40, -90, -78, 0, 0, 0));
+
+        int cantidadNumerosPositivos = 0;
+        int cantidadNumerosNegativos = 0;
+        int cantidadDeCeros = 0;
+
+        List<Integer> listaNumerosEnterosPositivos = new ArrayList<Integer>();
+        List<Integer> listaNumerosEnterosNegativos = new ArrayList<Integer>();
+
+        for (int num : data) {
             if (num == 0) {
                 cantidadDeCeros++;
             }
