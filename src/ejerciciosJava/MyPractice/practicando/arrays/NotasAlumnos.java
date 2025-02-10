@@ -1,6 +1,9 @@
 package ejerciciosJava.MyPractice.practicando.arrays;
 
-public class Ejercicio3 {
+import java.util.ArrayList;
+import java.util.List;
+
+public class NotasAlumnos {
 
     /*
         Programa que lee por teclado la nota de los alumnos de una clase y calcula la nota media del grupo. También muestra los alumnos con notas superiores a la media. El número de alumnos se lee por teclado.
@@ -11,8 +14,10 @@ public class Ejercicio3 {
 
     // link: http://puntocomnoesunlenguaje.blogspot.com/2012/08/arrays-en-java-ejercicios-basicos-2.html
 
+    static List<Double> notas = new ArrayList<>(List.of(
+            8.5, 5.6, 10.0, 9.8, 5.9, 8.5, 5.6, 10.0, 9.8, 5.9
+    ));
 
-    static double[] notas = {8.5, 5.6, 10, 9.8, 5.9, 8.5, 5.6, 10, 9.8, 5.9};
     static double mediaDeLasNotasDelosAlumnos;
     static int cantidadDeAlumnosConNotasMayoresAlPromedio = 0;
 
@@ -24,20 +29,18 @@ public class Ejercicio3 {
         System.out.println("La cantidad de alumnos con nota mayor a la media es: " + cantidadDeAlumnosConNotasMayoresAlPromedio);
     }
 
-    private static double notasAlumnos(double[] notasAlumnos) {
+    private static double notasAlumnos(List<Double> notasAlumnos) {
         double sumaDeNotasAlumnos = 0;
         int cantidadAlumnos = 0;
 
-        double mediaDeLasNotasDeLosAlumnos;
         for (double nota : notasAlumnos) {
             sumaDeNotasAlumnos += nota;
             cantidadAlumnos++;
         }
-        mediaDeLasNotasDeLosAlumnos = (sumaDeNotasAlumnos / cantidadAlumnos);
-        return mediaDeLasNotasDeLosAlumnos;
+        return (sumaDeNotasAlumnos / cantidadAlumnos);
     }
 
-    private static int catidadAlumnosConNotasMayoresAlPromedio(double[] notas) {
+    private static int catidadAlumnosConNotasMayoresAlPromedio(List<Double> notas) {
         int contadorAlumnosConNotasMayores = 0;
 
         for (double goodNotas : notas) {
