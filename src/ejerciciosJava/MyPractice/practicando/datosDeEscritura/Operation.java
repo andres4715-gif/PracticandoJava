@@ -1,80 +1,78 @@
 package ejerciciosJava.MyPractice.practicando.datosDeEscritura;
 
 public class Operation {
-    protected int sumaDeLaData(int[] data) {
-        int myData2 = 0;
-        for (int key : data) {
-            myData2 += key;
-        }
-        return myData2;
+  protected int sum(int[] data) {
+    int totalSum = 0;
+    for (int key : data) {
+      totalSum += key;
     }
+    return totalSum;
+  }
 
-    protected float average(int[] data) {
-        int amountOfData = data.length;
-        float myData3 = 0;
-        for (float myData : data) {
-            myData3 += myData;
-        }
-        float finalData = (myData3 / amountOfData);
-        return finalData;
+  protected float average(int[] data) {
+    int numberOfData = data.length;
+    float myData3 = 0;
+    for (float myData : data) {
+      myData3 += myData;
     }
+    return (myData3 / numberOfData);
+  }
 
-    protected int puntajeMasAlto(int[] data) {
-        int mayor = data[0];
+  protected int maxPoint(int[] data) {
+    int max = data[0];
 
-        for (int i = 1; i < data.length; i++) {
-            if (data[i] > mayor) {
-                mayor = data[i];
-            }
-        }
-        return mayor;
+    for (int i = 1; i < data.length; i++) {
+      if (data[i] > max) {
+        max = data[i];
+      }
     }
+    return max;
+  }
 
-    int puntajeMasBajo(int[] data) {
-        int menor = data[0];
+  int min(int[] data) {
+    int min = data[0];
 
-        for (int i = 1; i < data.length; i++) {
-            if (data[i] < menor) {
-                menor = data[i];
-            }
-        }
-        return menor;
+    for (int i = 1; i < data.length; i++) {
+      if (data[i] < min) {
+        min = data[i];
+      }
     }
+    return min;
+  }
 
-    int cantidadDeIntentosMayores45(int[] data) {
-        int contadorMayores = 0;
-        for (int i = 1; i < data.length; i++) {
-            if (data[i] > 45) {
-                contadorMayores++;
-            }
-        }
-        return contadorMayores;
+  int maxCountAvg(int[] data) {
+    int intMaxCount = 0;
+    for (int i = 1; i < data.length; i++) {
+      if (data[i] > average(data)) {
+        intMaxCount++;
+      }
     }
+    return intMaxCount;
+  }
 
-    int validarMenorDe35(int[] data) {
+  int minCountAvg(int[] data) {
+    int intMinCount = 0;
 
-        int contadoMenores = 0;
-
-        for (int i = 1; i < data.length; i++) {
-            if (data[i] < 35) {
-                contadoMenores++;
-            }
-        }
-        return contadoMenores;
+    for (int i = 1; i < data.length; i++) {
+      if (data[i] < average(data)) {
+        intMinCount++;
+      }
     }
+    return intMinCount;
+  }
 
-    boolean intentosConMismoResultado(int[] data) {
-        int numero = data[0];
-        boolean checkingData = false;
-        int contadorRepetidos = 0;
-        for (int i = 1; i < data.length; i++) {
-            if (data[i] == numero) {
-                contadorRepetidos++;
-            }
-        }
-        if (contadorRepetidos > 0) {
-            checkingData = true;
-        }
-        return checkingData;
+  boolean repeatedNumbers(int[] data) {
+    int num = data[0];
+    boolean checkingData = false;
+    int repeatedCount = 0;
+    for (int i = 1; i < data.length; i++) {
+      if (data[i] == num) {
+        repeatedCount++;
+      }
     }
+    if (repeatedCount > 0) {
+      checkingData = true;
+    }
+    return checkingData;
+  }
 }
