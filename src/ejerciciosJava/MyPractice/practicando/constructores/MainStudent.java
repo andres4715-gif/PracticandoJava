@@ -7,7 +7,7 @@ public class MainStudent {
 
   public static void main(String[] args) {
     List<String> articles = new ArrayList<>(List.of("keys", "Radio", "Wallet", "Watch", "Guns"));
-//    List<String> articles = new ArrayList<>(List.of("keys", "Radio", "Wallet", "Watch"));
+//  List<String> articles = new ArrayList<>(List.of("keys", "Radio", "Wallet", "Watch"));
 
     Student student = new Student(234, "Andres", "Rios", 40, articles);
 
