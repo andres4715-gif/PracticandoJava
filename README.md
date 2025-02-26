@@ -16,5 +16,5 @@ Para validar el total de ejercicios se puede validar esta [pagina](http://puntoc
 # En que voy 🚀🚚🛠️🚧
 Estoy mirando la carpeta de constructores: 
 ```properties
-src/ejerciciosJava/MyPractice/practicando/constructores
+src/ejerciciosJava/MyPractice/practicando/datosDeEscritura
 ```

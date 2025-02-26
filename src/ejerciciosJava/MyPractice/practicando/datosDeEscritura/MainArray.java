@@ -1,6 +1,6 @@
 package ejerciciosJava.MyPractice.practicando.datosDeEscritura;
 
-public class MisDatosDeEscrituraEjercicioConArrays {
+public class MainArray {
 
   public static void main(String[] args) {
     Inheritance inheritance = new Inheritance();
