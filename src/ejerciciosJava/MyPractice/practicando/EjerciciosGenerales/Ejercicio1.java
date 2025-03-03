@@ -9,10 +9,10 @@ public class Ejercicio1 {
 
         // Mostrar la tabla de multiplicar de un número en Java
 
-        int referencia = 7;
-        System.out.println("Tabla del " + referencia);
+        int reference = 7;
+        System.out.println("Reference Table: " + reference);
         for(int i = 0; i <=10; i++) {
-            System.out.println(referencia + " x " + i + " = " + (referencia * i));
+            System.out.println(reference + " x " + i + " = " + (reference * i));
         }
     }
 }
