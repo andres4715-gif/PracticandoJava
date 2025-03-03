@@ -14,7 +14,7 @@ Para validar el total de ejercicios se puede validar esta [pagina](http://puntoc
 11. Como trabajar con los map
 
 # En que voy 🚀🚚🛠️🚧
-Estoy mirando la carpeta de constructores: 
+Estoy mirando la carpeta de Ejercicios Generales: 
 ```properties
-src/ejerciciosJava/MyPractice/practicando/datosDeEscritura
+src/ejerciciosJava/MyPractice/practicando/EjerciciosGenerales/Ejercicio4.java
 ```

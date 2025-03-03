@@ -17,7 +17,7 @@ public class Ejercicio3 {
 
         for (int num : data) {
             if (num % 2 > 0) {
-                suma = suma + num;
+                suma += num;
             }
             if (num % 2 == 0) {
                 sumaEnteros += num;
